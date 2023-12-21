@@ -97,7 +97,7 @@ It does however seem to be more likely to happen for small batch sizes and deep 
 
 
 #### With and without support selection 
-![Results plot](Lista nets/ss_lista.png)
+![Results plot](Lista%20nets/ss_lista.png)
 
 
 
