@@ -1,20 +1,22 @@
 # Model based deep learning and algorithm unrolling
 
 ***********************************************************************************************************
-This repo implements a variety of model based deep learning methods and is roughly split into 2 parts. All code is
-written from scratch by me unless stated otherwise. 
+This repo implements a variety of model based deep learning methods and is roughly split into 2 parts. 
 <br/>
 The first part implements traditional sparsity aware learning algorithms ISTA, FISTA and CoD (Coordinate descent) 
-as well as online dictionary learning. Lista and subsequent lista variants.
+as well as online dictionary learning and finally lista and subsequent lista variants.
 <br/> 
 The second part focuses on solving image compressed sensing problems using model/algorithm inspired compressed sensing 
 deep neural networks.
+<br/> 
+All code is written from scratch by me unless stated otherwise. This repo is completely derived of any theory. Refer to the 
+referenced papers if you are in need of theoretical clarification.
 
 ***********************************************************************************************************
 ## Part 1: Online dictionary learning and Lista variants 
-All file of interest are in Lista nets folder
+All files of interest are in the Lista nets folder. The following is a high level description of the important files.
 ### ista_fista_cod.py
-Implements those 3 algorithms and tests them on a simple problem to display their correctness and more importantly
+Implements ista, fista and cod and tests them on a simple problem to display their correctness and more importantly
 their differences in speed. On said simple problem CoD is much faster than its counterparts. The test problem itself 
 is not written by me but merely adapted from the exercise material of "02459 Machine Learning for Signal Processing".
 CoD i.e. coordinate descent is implemented according to the paper: 
@@ -24,7 +26,7 @@ CoD i.e. coordinate descent is implemented according to the paper:
 ### online_dict_learning_cifar10.ipynb
 It was by no means the plan to implement online dictionary learning as it does not really have much to do with
 model based deep learning or algorithm unrolling. However the data used for training the original lista in 
-the original lista paper was generated using online dictionary learning, thus I thought I gad to generate data in
+the original lista paper was generated using online dictionary learning, thus I thought I had to generate data in
 a similar manner untill I later realized I could just generate it synthetically.
 <br/> 
 Online dictionary learning is implemented according to [Online dictionary learning for sparse coding](https://dl.acm.org/doi/abs/10.1145/1553374.1553463?casa_token=4Xtwg11aTCMAAAAA:8jhXBQ8ufQw3ZBxK74keAm_xhnaAOottnF8UzKqOllRoCUNcAQoPplULUWeoeKD248P7ZmpFm6ef)
