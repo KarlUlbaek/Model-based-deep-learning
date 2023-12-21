@@ -90,3 +90,11 @@ if __name__ == "__main__":
 
    train(model=SalsaNet(n=5, r=0.1), epochs=500, plotEveryX=20)
    train(model=SalsaNet(n=5, r=0.4), epochs=500, plotEveryX=20)
+
+
+
+
+
+
+
+
