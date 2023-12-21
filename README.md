@@ -151,7 +151,7 @@ Code can run.
 Plots the test performance throughout the training run of one of the models. It does so using
 data created and cashed during training. Said cached data can be found in "results" folder.
 
-### Results 
+### "Results Folder"
 Already contains cashed data from running each of the 3 models using either 10% sampling rate or 40% 
 sampling rate for 500 epochs. The models were matched/configured in size according to the throughput and
 not the amount of learnable parameters. For instance the unet has almost 30x the amount of learn able parameters
