@@ -45,7 +45,7 @@ does the exact same as "online_dict_learning_cifar10.ipynb" but using mnist data
 It takes quite some time to optimize W using online dictionary learning. The files "W_learned_cifar10.pt" and
 "W_learned_mnist.pt" are 2 such files. The columns (when reshaped) of "W_learned_mnist.pt" for instance looks as follows:
 
-![Results plot](Lista nets/W_learned_mnist.png)
+![Results plot](Lista%20nets/W_learned_mnist.png)
 
 ### synthetic.py
 After having spend way too much time implementing online dictionary I realized I could just generate synthetic data. 
@@ -90,10 +90,10 @@ It does however seem to be more likely to happen for small batch sizes and deep 
 
 
 #### Performance when changing the depth/number of layers of the networks
-![Results plot](Lista nets/deep_lista.png)
+![Results plot](Lista%20nets/deep_lista.png)
 
 #### Changing batch size
-![Results plot](Lista nets/batch_size_lista.png)
+![Results plot](Lista%20nets/batch_size_lista.png)
 
 
 #### With and without support selection 
@@ -153,9 +153,9 @@ but still has the same throughput. Plotting the cached results yields the follow
 (I am aware the models do not seem to have 
 converged especially when using a sampling rate of 40%, however they do take quite long to run for this many epochs as is):
 
-![Results plot](Compressed sensing nets/result.png)
+![Results plot](Compressed%20sensing%20nets/result.png)
 
 
 ### CSnet Reconstruction on test images using a sampling rate of 10%
-![Results plot](Compressed sensing nets/CSnet10.png)
+![Results plot](Compressed%20sensing%20nets/CSnet10.png)
 
