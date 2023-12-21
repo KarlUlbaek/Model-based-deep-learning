@@ -82,11 +82,11 @@ if __name__ == "__main__":
    from CSNet import CSNet
 
 
-   train(model=CSNet(n=7, r=0.1), epochs=1000, plotEveryX=100)
+   train(model=CSNet(n=7, r=0.1), epochs=500, plotEveryX=20)
    train(model=CSNet(n=7, r=0.4), epochs=500, plotEveryX=20)
 
    train(model=CSUNet(n=64, r=0.1), epochs=500, plotEveryX=20)
    train(model=CSUNet(n=64, r=0.4), epochs=500, plotEveryX=20)
 
    train(model=SalsaNet(n=5, r=0.1), epochs=500, plotEveryX=20)
-   train(model=SalsaNet(n=5, r=0.4), epochs=500, plotEveryX=1)
+   train(model=SalsaNet(n=5, r=0.4), epochs=500, plotEveryX=20)
